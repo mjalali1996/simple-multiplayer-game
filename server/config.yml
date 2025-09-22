@@ -1,0 +1,28 @@
+name: main-node
+
+runtime:
+  env:
+    - "GetStartingGameRoomPorts=4000"
+    - "ServerPort=7350"
+    - "GameRoomAppPath=data/linuxGame/gamefile.x86_64"
+    - "GameRoomAppDirectory=data/linuxGame"
+  http_key: "defaultkey"
+
+matchmaker:
+  max_tickets: 1
+  interval_sec: 15
+  max_intervals: 2
+
+database:
+  address:
+    - "postgres:localdb@postgres:5432/nakama"
+
+logger:
+  stdout: true
+  level: debug
+  file: "/nakama-files/data/logfile.log"
+
+console:
+  port: 7351
+  username: "my_user"
+  password: "my_password"

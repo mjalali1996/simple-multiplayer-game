@@ -1,0 +1,10 @@
+module simpleServer
+
+go 1.25.0
+
+require (
+	github.com/google/wire v0.7.0
+	github.com/heroiclabs/nakama-common v1.42.0
+)
+
+require google.golang.org/protobuf v1.36.8 // indirect
