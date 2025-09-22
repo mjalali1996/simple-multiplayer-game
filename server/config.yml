@@ -4,7 +4,7 @@ runtime:
   env:
     - "GetStartingGameRoomPorts=4000"
     - "ServerPort=7350"
-    - "GameRoomAppPath=data/linuxGame/gamefile.x86_64"
+    - "GameRoomAppPath=data/linuxGame/Game.x86_64"
     - "GameRoomAppDirectory=data/linuxGame"
   http_key: "defaultkey"
 
